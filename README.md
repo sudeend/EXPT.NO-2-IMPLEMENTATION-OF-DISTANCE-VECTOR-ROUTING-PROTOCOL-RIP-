@@ -3,14 +3,26 @@
 
 To connect computers in multiple networks using Distance Vector Routing Protocol and to verify the connectivity between computers.
 # EQUIPMENTS REQUIRED:
+# Equipment List
 
+| S.No | Name                      | Quantity |
+|------|---------------------------|----------|
+| 1    | Desktop Computer          | 4        |
+| 2    | Cisco 1800 Router         | 2        |
+| 3    | USB to Serial Converter   | 2        |
+| 4    | Cisco 2900 Switch         | 2        |
+| 5    | CAT 6 Patch Cable         | 10       |
+| 6    | Console Cable             | 2        |
 
 
 # IP ASSIGNMENT:
 
+<img width="829" height="519" alt="image" src="https://github.com/user-attachments/assets/bc0ad58d-ed07-47e3-8f08-0ddc1937db78" />
 
 
 # NETWORK DIAGRAM:
+<img width="1570" height="818" alt="image" src="https://github.com/user-attachments/assets/bbb8b95d-235a-4596-866d-2ed420a9ee5e" />
+
 # PROCEDURE:
 
 STEP 1: Open a Packet Tracer Software.
@@ -31,7 +43,7 @@ o PC4: 192.168.4.2, Subnet Mask: 255.255.255.0, Gateway: 192.168.4.1
 o PC5: 192.168.4.3, Subnet Mask: 255.255.255.0, Gateway: 192.168.4.1
  
 # PROGRAM
-
+```c
 Router0 Configuration Steps
 Click Router 0 and in CLI TYPE THIS Router> enable
 Router# configure terminal Router(config)# interface FastEthernet0/0
@@ -53,7 +65,8 @@ Router(config-if)# ip address 192.168.4.1 255.255.255.0 Router(config-if)# no sh
 Router(config-if)# exit Router(config)# router rip Router(config-router)# version 2
 Router(config-router)# network 192.168.3.0
 Router(config-router)# network 192.168.4.0 Router(config-router)# exit
-Steps to Check the Output:
+```
+### Steps to Check the Output:
 1.	Verify RIP Routing Table on Routers
 To check if RIP is working and the routes are learned from the other router, you need to inspect the routing table on each router.
 Click Router 0
@@ -79,9 +92,13 @@ You can also check connectivity between the PCs on different networks to ensure 
 •	Similarly, you can ping between other PCs (e.g., from PC2 to PC5) to verify network connective
  
 # OUTPUT
+<img width="1494" height="799" alt="image" src="https://github.com/user-attachments/assets/f86d4a5e-646d-4fe2-8eca-96345f6e7c4d" />
 
+<img width="1662" height="808" alt="image" src="https://github.com/user-attachments/assets/776b3ebb-d220-41cc-ac9a-212affe4243f" />
 
 
 # RESULT:
+Thus the computers in multiple networks using Distance Vector Routing
+Protocol are connected andthe connectivity between the computers is verified.
 
 Thus the computers in multiple networks using Distance Vector Routing <img width="576" height="365" alt="image" src="https://github.com/user-attachments/assets/f4245c26-a2f8-4621-b317-0a2c8049f764" />
